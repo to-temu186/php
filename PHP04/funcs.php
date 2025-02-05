@@ -10,10 +10,10 @@ function h($str)
 function db_conn()
 {
     try {
-        $db_name = 'gs-deploy-jumbo_php04';    //データベース名
-        $db_id   = 'gs-deploy-jumbo_php04';      //アカウント名
-        $db_pw   = 'deanytnahakoku3';      //パスワード：XAMPPはパスワード無しに修正してください。
-        $db_host = 'mysql3105.db.sakura.ne.jp'; //DBホスト
+        $db_name = '';    //データベース名
+        $db_id   = '';      //アカウント名
+        $db_pw   = '';      //パスワード：XAMPPはパスワード無しに修正してください。
+        $db_host = ''; //DBホスト
         $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
         return $pdo;
     } catch (PDOException $e) {
